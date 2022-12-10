@@ -1,0 +1,32 @@
+main{
+    min-height: 75vh;
+}
+h2{
+    filter: drop-shadow(0px 0px 1px var(--red));
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+.about{
+    margin: 30px 50px 50px 50px;
+}
+.about p{
+    font-size: 30px
+}
+.btn{
+    margin-top: 50px;
+}
+.btn button{
+    width: 300px;
+    height: 80px;
+    background-color: var(--white2);
+    border-radius: 8px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn button:hover{
+    scale: 1.1;
+    background-color: #50000020;
+    filter: drop-shadow(0px 0px 2px var(--red));
+}

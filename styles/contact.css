@@ -1,0 +1,246 @@
+#textarea{
+    resize: none;
+    border: none;
+    border-bottom: 2px solid #500000;
+    background-color: rgb(217, 217, 217)
+}
+.about{
+    grid-area: message;
+}
+main{
+    min-height: 74vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_name_main{
+    background-color: rgb(217, 217, 217);
+}
+.form_login{
+    position: relative;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 50px 20px 40px 50px 10px 10px;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-areas: 
+    "title title"
+    "name surname"
+    "mail tel"
+    "message message"
+    "captcha_submit captcha"
+    "submit .";
+    row-gap: 30px;
+    column-gap: 30px;
+    align-items: center;
+    justify-items: center;
+}
+.item_3{
+    grid-area: sum;
+    position: absolute;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.item_3 button{
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+    
+}
+.item_2 p{
+    height: 50px;
+    width: 150px;
+    font-size: 32px;
+}
+.input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #500000;
+    background-color: rgb(217, 217, 217);
+    transition: .2s;
+}
+.input::placeholder{
+    color: #500000;
+    transition: .2s;
+}
+#textarea::placeholder{
+    color: #500000;
+    transition: .2s;
+}
+.title{
+    grid-area: title;
+    font-size: 40px;
+    color: #500000;
+
+}
+.button{
+    grid-area: submit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#button{
+    color: #ffffff;
+    background-color: #500000;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    transition: .3s;
+}
+#button:hover{
+    scale: 1.1;
+}
+.input:focus{
+    background-color: #ffffff;
+    outline: none;
+}
+.input:focus::placeholder{
+    color: transparent;
+}
+#textarea:focus{
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 4px;
+}
+#textarea:focus::placeholder{
+    color: transparent;
+}
+.item_2{
+    grid-area: captcha;
+    width: 100px;
+}
+.item_1{
+    grid-area: captcha_submit;
+    position: absolute;
+    left: 0px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.item_1 input{
+    width: 150px;
+    height: 30px;
+}
+.btn_captcha{
+    grid-area: captcha;
+    font-size: 32px;
+}
+.item_2 p{
+    width: 100px;
+    height: 100;
+    grid-area: captcha;
+}
+.item_3 input{
+    width: 100px;
+}
+#captcha{
+    border-radius: 4px;
+}
+@media (max-width: 1000px){
+    .input{
+        width: 170px;
+    }
+    #textarea{
+        width: 480px
+    }
+    #title_form{
+        font-size: 70px;
+    }
+    .input::placeholder{
+        font-size: 22px;
+    }
+    .about::placeholder{
+        font-size: 18px;
+    }
+    .form_login{
+        grid-template-rows: 130px 80px 80px 50px 30px 10px;
+        grid-template-columns: repeat(2, 300px);
+        row-gap: 20px;
+        column-gap: 0px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .button{
+        left: 60px;
+    }
+    .item_1{
+        left: 60px;
+    }
+    #captcha{
+        width: 100px;
+        border-radius: 4px;
+    }
+}
+@media (max-width: 719px){
+    .input{
+        width: 250px;
+    }
+    #textarea{
+        width: 250px
+    }
+    .form_login{
+        grid-template-columns: none;
+        grid-template-rows: repeat(9, 50px);
+        row-gap: 20px;
+        column-gap: 0px;
+        grid-template-areas: 
+        "title"
+        "name"
+        "surname"
+        "mail"
+        "tel"
+        "message"
+        "captcha"
+        "captcha_submit"
+        "submit";
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .title{
+        grid-area: title;
+    }
+    .name{
+        grid-area: name;
+    }
+    .surname{
+        grid-area: surname;
+    }
+    .email{
+        grid-area: mail;
+    }
+    .tel{
+        grid-area: tel;
+    }
+    .about{
+        grid-area: message;
+    }
+    .button{
+        grid-area: submit;
+        left: 75px;
+        bottom: 20px;
+    }
+    .item_1{
+        left: 75px;
+    }
+    .about{
+        grid-area: message;
+    }
+    .title{
+        grid-area: title;
+    }
+    #captcha{
+        width: 100px;
+    }
+    #title_form{
+        font-size: 50px;
+    }
+    .input::placeholder{
+        font-size: 18px;
+    }
+    .about::placeholder{
+        font-size: 14px;
+    }
+}

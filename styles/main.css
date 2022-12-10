@@ -1,0 +1,20 @@
+:root {
+    --white: #eaeae8;
+    --white2: #e9e0cf;
+    --lightred: #b40220;
+    --red: #420c1a;
+    --darkgrey: #454140;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Russo One, 'Times New Roman';
+    box-sizing: border-box;
+    
+}
+body{
+    background: linear-gradient(180deg, var(--white), var(--white2));
+}
+main{
+    min-height: 100vh;
+}

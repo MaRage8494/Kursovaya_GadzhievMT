@@ -1,0 +1,131 @@
+main{
+    min-height: 100vh;
+}
+.progress_container{
+    width: 90%;
+    height: 10px;
+    border-radius: 5px;
+    background: #989898;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(0%);
+    transition: 0.3s ease-in;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.progress{
+    background: #500000;
+    border-radius: 5px;
+    height: 6px;
+}
+.player{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.progress_container.active{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(100%);
+}
+.play{
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+}
+.player p{
+    margin-left: 10px;
+}
+.rus_list > li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.rus_list > li > .progress_container {
+    align-self: center;
+}
+
+.rus_list > li > span{
+    margin:20px 10px 0 20px;
+    font-size: 20px;
+}
+.hits img{
+    padding-left: 10px;
+}
+.parad{
+    font-size: 40px;
+    margin: 30px;
+    text-align: center;
+    filter: drop-shadow(0px 0px 2px var(--red));
+}
+.title_rus{
+    font-size: 32px;
+    margin-left: 10px;
+}
+.rus_list{
+    margin-right: 10px;
+}
+.hits{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.rus_hits{
+    border: 0.2vw solid var(--red);
+    background-color: var(--white2);
+    border-radius: 8px;
+    padding: 10px 10px 30px 10px;
+    margin: 0 20px;
+}
+.eng_hits{
+    border: 0.2vw solid #500000;
+    background-color: var(--white2);
+    border-radius: 8px;
+    padding: 10px 10px 30px 10px;
+    margin-left: 20px;
+    margin: 0 20px;
+}
+.video{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.video_title{
+    position: absolute;
+    left: 350px;
+    top: 240px;
+    background-color: #292929;
+    padding: 20px;
+    color: #fff;
+    opacity: 0;
+    transition: .3s;
+}
+.peep:hover ~ .video_title{
+    opacity: 1;
+}
+@media (max-width: 1000px){
+    .hits{
+        flex-direction: column;
+    }
+    .peep{
+        width: 500px;
+        height: 300px;
+    }
+    .eng_hits{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px){
+    .peep{
+        width: 300px;
+        height: 200px;
+    }
+}

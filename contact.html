@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusExs</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+<body>
+    <header>
+       <div class="logo">
+            <img src="images/logo.png" alt="LOGO">
+            <p class="logo_name">MusExs</p>
+       </div>
+        <nav class="nav-menu">
+            <input type="checkbox" id="check-menu">
+            <label for="check-menu" class="lab">
+            <div class="burger-line first"></div>
+            <div class="burger-line second"></div>
+            <div class="burger-line third"></div>
+            <div class="burger-line fourth"></div>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html" title="На главную">Главная</a></li>
+                <li><a href="popular.html" title="Популярное">Популярное</a></li>
+                <li><a href="gallery.html" title="Галерея">Галерея</a></li>
+                <li><a href="about.html" title="О нас">О нас</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <div class = "form_name_main">
+            <form action = "" method="get" autocomplete="on" class="form">
+                <fieldset class="form_login">
+
+                    <p class="title">
+                        <legend id="title_form">Contact</legend>
+                    </p>
+
+                    <p>
+                        <input type="text" id="name" name="name" placeholder="Имя" required class="input name">
+                    </p>
+
+                    <p>
+                        <input type="text" id="text" name="text" placeholder="Фамилия" required class="input surname">
+                    </p>
+
+                    <p>
+                        <input type="email" id="mail" name="mail" required placeholder="Почта" class="input email">
+                    </p>
+
+                    <p>
+                        <input class="input tel" type="tel" id="tel" name="tel" required min="1" max="11" pattern="+[0-99]{1}([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон">
+                    </p>
+
+                    <p class="about">
+                        <textarea class="about" name="textarea" id="textarea" cols="83" rows="2" minlength="5" maxlength="100" placeholder="Напишите Ваше сообщение здесь" required></textarea>
+                    </p>
+                    <p class="item_1">
+                        <input class="captcha" required="required" type="text" name="captcha" id="captcha" placeholder="Капча">
+                    </p>
+
+                    <div class="item_2">
+                        <p name="captcha_btn" class="btn_submit btn_captcha"></p>
+                    </div>
+
+                    <p class="button">
+                        <input type="submit" value="Отправить" id="button">
+                    </p>
+
+                    <script src = "scripts/captcha.js"></script>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <address>
+            <div class = "all_info">
+                <div class = "info">
+                    <a>Пишите на почту:</a><br>
+                    <a class="info_pro" href = "mailto:marat_thebest@mail.ru&body = Привет">marat_thebest@mail.ru</a>
+                </div>
+                <div class = "info">
+                    <a>Звоните по номеру:</a><br>
+                    <a class="info_pro" href = "tel: 89777777777">+7(977)-777-77-77</a>
+                </div>
+                <div class = "info">
+                        <a>Мы на карте:</a><br>
+                        <a class="info_pro" href = "https://www.google.com/maps/place/ул.+Ленина,+36,+Каспийск,+Респ.+Дагестан,+368300/data=!4m2!3m1!1s0x404ea87c94723151:0xfe02a0bf47e9bc2c?sa=X&ved=2ahUKEwjLk_qB6rP6AhWFqIsKHQsSDsAQ8gF6BAgJEAE" target="_blank">г.Каспийск, ул. Ленина, д.36</a>                    
+                </div>
+            </div>
+            <div class="networks">
+                <div class="social">
+                    <span></span>
+                    <a href="#"><img width = 45 src="images/VK.png" alt="VK"></a>
+                </div>
+                <div class="social">
+                    <span></span>
+                    <a href="#"><img width = 45 src="images/insta.png" alt="VK"></a>
+                </div>
+                <div class="social">
+                    <span></span>
+                    <a href="#"><img width = 45 src="images/tg.png" alt="VK"></a>
+                </div>
+                <div class="social">
+                    <span></span>
+                    <a href="#"><img width = 45 src="images/twitter.png" alt="VK"></a>
+                </div>
+            </div>
+        </address>
+    </footer>
+</body>
+</html>

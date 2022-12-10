@@ -1,0 +1,258 @@
+.parad{
+    font-size: 50px;
+    margin: 30px;
+    text-align: center;
+    filter: drop-shadow(0px 0px 3px var(--red));
+}
+.block_name{
+    position: absolute;
+    top: 190px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    flex-wrap: nowrap;
+    opacity: 0;
+    transition: .5s;
+}
+.gallery_thing:hover .block_name{
+    opacity: 1;
+}
+.rain .block_name{
+    top: 380px;
+    left: 30px;
+}
+.anacondaz .block_name{
+    top: 180px;
+    left: 20px;
+}
+.rain .block_name h2{
+    font-size: 32px;
+}
+.rain .block_name p{
+    font-size: 18px;
+}
+.sqwoz .block_name{
+    top: 160px;
+}
+.scrip .block_name{
+    top: 200px;
+}
+.depo .block_name{
+    top: 410px;
+    left: 30px;
+}
+.smoke .block_name{
+    width: 180px;
+    top: 160px;
+    left: 10px;
+}
+.depo .block_name h2{
+    font-size: 32px;
+}
+.depo .block_name p{
+    font-size: 18px;
+}
+.name{
+    color:rgb(195, 195, 195);
+}
+.name h2{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.name p{
+    font-size: 15px;
+}
+.gallery_block:hover img{
+    transform: scale(1.2);
+    filter: blur(1px);
+    opacity: .5;
+}
+.gallery_block:hover .block_name{
+    opacity: 1;
+}
+.gallery2{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 400px 220px 400px 190px;
+    grid-template-rows: 250px 220px 270px;
+    grid-template-areas: 
+    "three loqiemean shit shit"
+    "three sqwoz depo smoke"
+    "anacondaz anacondaz depo scrip";
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 30px;
+}
+.gallery_block img{
+    width: 100px;
+    border-radius: 4px;
+    transition: .5s;
+}
+.shit{
+    grid-area: shit;
+}
+.shit img{
+    width: 100%;
+    height: 100%;
+}
+.sqwoz{
+    grid-area: sqwoz;
+}
+.sqwoz img{
+    width: 100%;
+}
+.depo{
+    grid-area: depo;
+}
+.depo img{
+    width: 100%;
+    height: 100%;
+}
+.smoke{
+    grid-area: smoke;
+}
+.smoke img{
+    width: 120%;
+}
+.anacondaz{
+    grid-area: anacondaz;
+}
+.anacondaz img{
+    height: 100%;
+    width: 100%;
+}
+.scrip{
+    grid-area: scrip;
+}
+.scrip img{
+    width: 190%;
+    height: 100%;
+}
+.loqiemean{
+    grid-area: loqiemean;
+}
+.loqiemean img{
+    width: 300px;
+    height: 300px;
+}
+.rain{
+    grid-area: three;
+}
+.rain img{
+    height: 100%;
+    width: 100%;
+}
+.gallery_block{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: black;
+}
+@media (max-width: 1000px){
+    .gallery2{
+        grid-template-columns: 400px 250px;
+        grid-template-rows: 210px 190px 300px 240px 180px 300px;
+        grid-template-areas: 
+        "three loqiemean"
+        "three sqwoz"
+        "anacondaz anacondaz"
+        "depo smoke"
+        "depo scrip"
+        "shit shit";
+    }
+    .block_name{
+        top: 120px;
+        bottom: 0;
+    }
+    .depo .block_name{
+        top: 330px;
+        left: 20px;
+    }
+    .smoke .block_name{
+        top: 160px;
+        width: 100%;
+    }
+    .rain .block_name{
+        top: 310px;
+        left: 20px;
+    }
+    .scrip .block_name{
+        top: 110px;
+        left: 10px;
+    }
+    .loqiemean .block_name{
+        top: 150px;
+        left: 10px;
+    }
+    .sqwoz .block_name{
+        top: 120px;
+    }
+    .anacondaz .block_name{
+        top: 210px;
+    }
+    .shit .block_name{
+        top: 220px;
+    }
+}
+@media (max-width: 768px){
+    .gallery2{
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 340px 200px 200px 350px 200px 200px;
+        grid-template-areas: 
+        "three three"
+        "loqiemean sqwoz"
+        "anacondaz anacondaz"
+        "depo depo"
+        "smoke scrip"
+        "shit shit";
+    }
+    .block_name{
+        top: 120px;
+        bottom: 0;
+    }
+    .depo .block_name{
+        top: 260px;
+        left: 20px;
+    }
+    .smoke .block_name{
+        top: 100px;
+        width: 100%;
+    }
+    .rain .block_name{
+        top: 260px;
+        left: 20px;
+    }
+    .scrip .block_name{
+        top: 120px;
+        left: 10px;
+    }
+    .loqiemean .block_name{
+        top: 120px;
+        left: 10px;
+    }
+    .sqwoz .block_name{
+        top: 120px;
+    }
+    .anacondaz .block_name{
+        top: 110px;
+    }
+    .shit .block_name{
+        top: 130px;
+    }
+    .sqwoz img{
+        width: 134%;
+    }
+    .smoke img{
+        width: 134%;
+    }
+}
