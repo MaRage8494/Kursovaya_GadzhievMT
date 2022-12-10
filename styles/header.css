@@ -3,7 +3,6 @@
     position:sticky ;
     top: 0;
     z-index: 2;
-    height: 86.063px;
 }
 header{
     background:var(--white);
