@@ -197,9 +197,4 @@ header{
     #check-menu:checked ~ .lab .fourth{
         display: none;
     }
-    header{
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-    }
 }
