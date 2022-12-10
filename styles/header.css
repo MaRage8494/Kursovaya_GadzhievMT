@@ -42,6 +42,7 @@ header{
     height: -moz-fit-content;
     height: fit-content;
     width: 60px;
+    height: 66px;
     float: left;
     -webkit-filter: drop-shadow(0px 0px 2px var(--red));
             filter: drop-shadow(0px 0px 2px var(--red));
