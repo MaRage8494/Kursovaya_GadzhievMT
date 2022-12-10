@@ -16,7 +16,6 @@ header{
     z-index: 2;
     opacity: 0.9;
     box-shadow: 0px 2px 5px var(--red);
-    height: 86.063px;
 }
 .logo{
     display: flex;
