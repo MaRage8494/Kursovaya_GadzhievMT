@@ -158,7 +158,7 @@
     border-radius: 4px;
     background-color: black;
 }
-@media (max-width: 1000px){
+@media (max-width: 1180px){
     .gallery2{
         grid-template-columns: 400px 250px;
         grid-template-rows: 210px 190px 300px 240px 180px 300px;
